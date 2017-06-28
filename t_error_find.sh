@@ -8,7 +8,7 @@ echo "Failed counter:`grep -n "] Fail" log.txt|wc -l`"
 echo "Skipped counter:`grep -n "] Skip" log.txt|wc -l`"
 #else
 echo "EDC error log:`egrep -n "Error = [1-9^]" edc.log`"
-echo "EDC no error counter:`grep -n "Error = [0-9^]" edc.log|wc -l`"
+echo "EDC no error counter:`grep -n "Error = 0" edc.log|wc -l`"
 echo "EDC error counter:`grep -n "Error = [1-9^]" edc.log|wc -l`"
 echo "Errors: `grep -n "<error>" log.txt`"
 echo `grep -n "CRC" log.txt`
