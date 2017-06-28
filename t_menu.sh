@@ -35,8 +35,7 @@ case  $a in
 	5) 
 		t_rm_log.sh;;
         6)
-		echo 'please make sure target vbios has been put into "/shareAll/yjshao/Linux_attach/BIOS/current/"  exclusively; bios was flashed after 20s (ctrl+c to cancel it)'
-		sleep 20
+		echo 'please make sure target vbios has been put into "/shareAll/yjshao/Linux_attach/BIOS/current/"  exclusively'	
                 t_bios_flash.sh;;
         7)
                 t_Mstatus_record.sh &
